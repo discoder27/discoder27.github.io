@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--imports stylesheet-->
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <!--Imports desired font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+
+    <style>
+        body {
+            background-color: #ffe3e3;
+            
+        }
+
+    </style>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="blog.html">Blog</a>
+        <div class="dropdown">
+            <button class="dropbutton"><a class="active" href="projects.html">My Projects</a></button>
+            <div class="dropdown-content">
+              <a href="https://distomato.itch.io/swift-connections">Swift Connections</a>
+              <a href="https://sites.google.com/my.yorku.ca/katsa-bejemil/home">Publishing</a>
+              <a href="https://sites.google.com/my.yorku.ca/kbmarketingportfolio/home">Marketing</a>
+            </div>
+          </div>
+        <a class="active" href="contact.html">Contact</a>
+        <img class="logo" src="Katsa Logo.jpg">
+    </div>
+
+</head>
+    
+<body>
+    <h2>Contact Forms</h2>
+    <form action="/action_page.php">
+        <label for="name">Name</label>
+        <br>
+        <input type="text" id="name" name="name">
+        <br>
+
+        <label for="email">Email</label>
+        <br>
+        <input type="text" id="email" name="email">
+        <br>
+
+        <label for="subject">Subject</label>
+        <br>
+        <input type="text" id="subject" name="subject">
+        <br>
+
+        <label for="message">Message</label>
+        <br>
+        <input type="text" id="message" name="message">
+        <br>
+
+        <button>Submit</button>
+
+    </form>
+
+    <h2>Contact me at:</h2>
+
+    <div style="display: flex; justify-content: center; align-items: center;">
+
+        <div class="contactme">
+            <img class="formimage" src="linkedin.png" alt="linkedin">
+            <p>Katsa Bejemil</p>
+        </div>
+
+        <div class="contactme">
+            <img class="formimage" src="email.png" alt="email" >
+            <p style="text-align: center;">bejemilk@my.yorku.ca</p>
+        </div>
+
+        <div class="contactme">
+            <img class="formimage" src="phone.png" alt="phone number">
+            <p>123-456-7890</p>
+        </div>
+    </div>
+
+</body>
+
+<footer>
+    <p>Copyright Katsa Bejemil 2024</p>
+  </footer>
+  
+</html>
