@@ -43,14 +43,14 @@
 
             
         }
-
+        /* When the user clicks on the switch, it changes the background color to black and the text color to pink*/
         .dark-mode {
                 background-color: black;
                 color: pink;
             }
     </style>
 
-    <!--Fix this-->
+
     <div class="navbar">
         <a href="index.html">Home</a>
         <a class="active" href="aboutme.html">About Me</a>
@@ -72,15 +72,19 @@
 
 </style>
 
+
 <body>
+    <!--Creates the switch-->
     <label class="switch">
         <input id="dark-mode" type="checkbox">
         <span class="slider round"></span>
     </label>
 
     <script>
+        //Creates an event listener which listens for the user's input
        document.querySelector("input[id=dark-mode]").addEventListener("change", function() { 
         var element = document.body;
+        //if the user clicks on the switch, it changes the page's theme to dark mode
         if (this.checked) {
             element.classList.toggle("dark-mode");
         }

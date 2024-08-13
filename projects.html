@@ -16,6 +16,7 @@
     body {
       background-color: #ffe3e3;
     }
+      /* When the user clicks on the switch, it changes the background color to black and the text color to pink*/
     .dark-mode {
                 background-color: black;
                 color: pink;
@@ -45,23 +46,25 @@
 </head>
 
 <body>
+  <!--Creates the switch-->
   <label class="switch">
     <input id="dark-mode" type="checkbox">
     <span class="slider round"></span>
 </label>
 
 <script>
-   document.querySelector("input[id=dark-mode]").addEventListener("change", function() { 
-    var element = document.body;
-    if (this.checked) {
-        element.classList.toggle("dark-mode");
-    }
-    else {
-        element.classList.toggle("dark-mode");
-    }
-  });
+  //Creates an event listener which listens for the user's input
+ document.querySelector("input[id=dark-mode]").addEventListener("change", function() { 
+  var element = document.body;
+  //if the user clicks on the switch, it changes the page's theme to dark mode
+  if (this.checked) {
+      element.classList.toggle("dark-mode");
+  }
+  else {
+      element.classList.toggle("dark-mode");
+  }
+});
 </script>
-
   <h3>Where technology and art collide...</h3>
   <!--Add photos and text of each project-->
 
@@ -83,11 +86,28 @@
     </div>
     
   </div>
-    <p style="width: 22%; margin: auto;" ><a href="https://sites.google.com/my.yorku.ca/katsa-bejemil/home">
+   <div> <p style="width: 22%; margin: auto;" ><a href="https://sites.google.com/my.yorku.ca/katsa-bejemil/home">
       <img src="Publishing.jpg" alt="Publishing Portfolio" width="250" height="250">
-    </a></p>
+    </a></p> 
+  </div>
 
-
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 
 </body>
 
