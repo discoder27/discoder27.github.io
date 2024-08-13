@@ -16,6 +16,10 @@
         body {
             background-color: #ffe3e3;
         }
+        .dark-mode {
+                background-color: black;
+                color: pink;
+            }
     </style>
 
     <!--Fix this-->
@@ -38,7 +42,29 @@
 </head>
 
 <body>
-    <h1>More content coming soon..</h1>
+
+
+    <label class="switch">
+      <input id="dark-mode" type="checkbox">
+      <span class="slider round"></span>
+  </label>
+
+  <script>
+     document.querySelector("input[id=dark-mode]").addEventListener("change", function() { 
+      var element = document.body;
+      if (this.checked) {
+          element.classList.toggle("dark-mode");
+      }
+      else {
+          element.classList.toggle("dark-mode");
+      }
+    });
+  </script>
+
+<script src="scripts.js"></script>
+<ul id="blog-list">
+
+</ul>
 </body>
 
 <footer>

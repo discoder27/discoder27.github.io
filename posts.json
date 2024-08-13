@@ -1,0 +1,30 @@
+{
+    "blog 1 title" : "HOW TO MAKE LIGHT/DARK MODE SWITCH",
+
+    "date" : "August 12, 2024",
+
+    "step 1.1" : "On my HTML file: I added a class named switch which is a checkbox that takes an input from an id called dark-mode.",
+
+    "step 1.2" : "On the style section of the HTML file, add a selector for dark-mode and set the style attributes for it, i chose black for the background with pink text",
+
+    "step 1.3" : "In the script section create an event listener that detects the user's input which activates dark-mode. So if the user clicks on the switch, they toggle dark mode and when clicked again, goes back to light mode",
+
+    "step 1.4" : "On the css stylesheet, I specified how the switch will look before and after it is clicked",
+
+    "border" : ".............................................................................",
+
+    "blog 2 title": "HOW TO IMPLEMENT THE BLOG ",
+
+    "date 2" : "August 12, 2024",
+
+    "step 2.1" : "firstly, I created a json file which stores my blog posts",
+
+    "step 2.2" : "added the title, date, and blog content into an array",
+
+    "step 2.3" : "I then created a file called scripts.js and copy pasted the code provided",
+
+    "step 2.4" : "Lastly, I completed the code by adding the file which contains my posts, iterating the values of the JSON file, changed the style of the text and added text to the element"
+
+}
+
+

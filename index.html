@@ -18,6 +18,10 @@
         body {
             background-color: #ffe3e3;
         }
+        .dark-mode {
+                background-color: black;
+                color: pink;
+            }
     </style>
 </head>
 <div class="navbar">
@@ -35,9 +39,27 @@
     <a href="contact.html">Contact</a>
     <img class="logo" src="Katsa Logo.jpg">
 </div>
-<h1>Welcome to my website!</h1>
+
 
 <body>
+    
+    <label class="switch">
+        <input id="dark-mode" type="checkbox">
+        <span class="slider round"></span>
+    </label>
+
+    <script>
+       document.querySelector("input[id=dark-mode]").addEventListener("change", function() { 
+        var element = document.body;
+        if (this.checked) {
+            element.classList.toggle("dark-mode");
+        }
+        else {
+            element.classList.toggle("dark-mode");
+        }
+      });
+    </script>
+    <h1>Welcome to my website!</h1>
     <div class="intro">
         <div>
             <h2>Hi! My name is Katsa and this is my portfolio. Feel free to look around </h2>

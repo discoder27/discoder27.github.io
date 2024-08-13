@@ -16,6 +16,10 @@
     body {
       background-color: #ffe3e3;
     }
+    .dark-mode {
+                background-color: black;
+                color: pink;
+            }
   </style>
 
 
@@ -41,6 +45,22 @@
 </head>
 
 <body>
+  <label class="switch">
+    <input id="dark-mode" type="checkbox">
+    <span class="slider round"></span>
+</label>
+
+<script>
+   document.querySelector("input[id=dark-mode]").addEventListener("change", function() { 
+    var element = document.body;
+    if (this.checked) {
+        element.classList.toggle("dark-mode");
+    }
+    else {
+        element.classList.toggle("dark-mode");
+    }
+  });
+</script>
 
   <h3>Where technology and art collide...</h3>
   <!--Add photos and text of each project-->
@@ -70,5 +90,9 @@
 
 
 </body>
+
+<footer>
+  <p>Copyright Katsa Bejemil 2024</p>
+</footer>
 
 </html>

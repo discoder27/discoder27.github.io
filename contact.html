@@ -19,6 +19,10 @@
             background-color: #ffe3e3;
             
         }
+        .dark-mode {
+                background-color: black;
+                color: pink;
+            }
 
     </style>
     <div class="navbar">
@@ -40,6 +44,22 @@
 </head>
     
 <body>
+    <label class="switch">
+        <input id="dark-mode" type="checkbox">
+        <span class="slider round"></span>
+    </label>
+
+    <script>
+       document.querySelector("input[id=dark-mode]").addEventListener("change", function() { 
+        var element = document.body;
+        if (this.checked) {
+            element.classList.toggle("dark-mode");
+        }
+        else {
+            element.classList.toggle("dark-mode");
+        }
+      });
+    </script>
     <h2>Contact Forms</h2>
     <form action="/action_page.php">
         <label for="name">Name</label>
